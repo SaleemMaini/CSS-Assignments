@@ -1,0 +1,57 @@
+div{
+    width: 400px;
+    margin: auto;
+    background-color: #eee;
+    padding:40px;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    border-right: 5px solid rgba(45, 56, 158, 0.568);
+    border-left: 5px solid rgba(45, 56, 158, 0.568);
+    position: relative;
+    margin-top: 50px;
+}
+span{
+    position: absolute;
+    background-color: #5783e6;
+    width: 42px;
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
+.top-left{
+    top: 0;
+    left: 0;
+    margin-top: -15px;
+    margin-left: -30px;
+    border-right: 3px solid red;
+}
+
+.bottom-left{
+    left: 0;
+    bottom: 0;
+    margin-bottom: -20px;
+    margin-left: -30px;
+    border-right: 3px solid red;
+}
+.top-right {
+    right: 0;
+    top: 0;
+    margin-top: -15px;
+    margin-right: -30px;
+    border-left: 3px solid red;
+}
+.bottom-right{
+    right: 0;
+    bottom: 0;
+    margin-bottom: -20px;
+    margin-right: -30px;
+    border-left: 3px solid red;
+}
+/* Relative : بيتحرك العنصر بناءً على نفسه */
+/*  Absolute :  العنصر بيخرج عن الوورك فلو
+                العنصر بيتحرك بناءً على الأب الذي هو فيه
+                ولكن يجب الأنتباه ان الأب يجب ان يكون postiton: Relative
+    Fixed: العنصر يتحرك بناءً على الصفحة بغض النظر عن مكانه ويتحرك مع السكروول
+    
+    
+    */

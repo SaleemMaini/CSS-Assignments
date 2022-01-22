@@ -1,0 +1,45 @@
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.link {
+    color: #8bc34a;
+    text-decoration: none;
+    display: block;
+    border: 2px solid #8bc34a;
+    border-radius: 5px;
+    margin: 90px auto;
+    position: relative;
+    width: 160px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    overflow: hidden;
+}
+.link::before {
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left: 0;
+    color: white;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+.link:hover::before {
+    transform: translateX(0);
+    transition: 0.3s;
+}
+.link:hover {
+    background-color: #8bc34a;
+    transition: 0.4s;
+
+}
+.link span {
+    display: block;
+    transition: .3s;
+}
+.link:hover span {
+    transform: translateX(100%);
+    transition: .3s;
+}

@@ -1,0 +1,30 @@
+body{
+    font-family: 'Arial';
+}
+P{
+    position: relative;
+    background-color: #EEE;
+    width: 400PX;
+    margin: 20px auto;
+    padding: 20px;
+    counter-increment: counter;
+}
+p::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: red;
+
+}
+p::before{
+    position: absolute;
+    content: counter(counter);
+    color: white;
+    padding: 20px;
+    top: 0;
+    left: -40px;
+    background-color: red;
+}

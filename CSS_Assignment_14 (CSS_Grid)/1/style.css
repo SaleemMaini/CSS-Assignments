@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 20% 80%;
+  }
+.grid div {
+    background-color: darkslategray;
+    margin: 8px;
+    counter-increment: my-counter;
+    position: relative;
+    padding: 20px;
+}
+.grid div::before{
+    position: absolute;
+    content: 'element';
+    left: 1;
+    color: white;
+}
+.grid div::after{
+    position:  absolute;
+    content:  counter(my-counter);
+    color: white;
+    left: 85px;
+}

@@ -1,0 +1,45 @@
+.shadows{
+    font-size: 80pt;
+    text-shadow: 3px 3px #F44336,
+                 6px 6px #2196F3,
+                 9px 9px #9C27B0;
+}
+
+/* Second */
+
+.one{
+    text-transform: uppercase;
+}
+.two{
+    text-transform: capitalize;
+}
+.three{  
+    text-transform: lowercase;
+}
+
+/* Third */
+
+.firsrtDiv,
+.secondDiv{
+    width: 400px;
+    background-color: #eee;
+    padding: 20px;
+    margin: 20px;
+}
+.secondDiv{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+a{
+    margin: 50% 50%;
+    color: white;
+    text-transform: capitalize;
+    background-color: teal;
+    padding: 20px;
+    text-decoration: none;
+    border-bottom: 5px solid rgb(1, 71, 71);
+    
+}

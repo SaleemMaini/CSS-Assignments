@@ -1,0 +1,63 @@
+
+/* 
+    Flexibale Box
+    For Parent
+        - display: flex => To start flexibale box
+        - flex-direction: row => Default value
+        - flex-wrap: nowrap => Default  value 
+        - flex-flow: [Flex-Direction] + [Flex-weap]
+        - justify-content: Flex start => Defaule value
+        - align-items: Streach => Default value
+            * Streach to fit content
+        - align-content: Streach => Default value
+*/
+
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.parent{
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  background-color: #eee;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  justify-content: space-between;
+  }
+
+.parent div{
+  color: white;
+  text-align: center;
+  padding: 20px 6px;
+  font-weight: 400;
+  height: 50%;
+  line-height: 100px;
+  width: calc(70%/4);
+}
+
+.one{
+  order: 2;
+  align-self: flex-start;
+  background-color: orange;
+}
+
+.two{
+  order: 3;
+  background-color: green;
+}
+.three{
+  order: 4;
+  align-self: flex-start;
+  background-color: brown;
+}
+.four{
+  order: 1;
+  background-color: violet;
+}

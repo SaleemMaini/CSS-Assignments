@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clear{
+    clear: both;
+}
+.parent {
+    width: 800px;
+    background-color: rgb(192, 132, 132);
+    text-align: center;    
+}
+/* 2 spaces 15px => 15*2 = 30 
+    => width 100% - 30px 
+*/
+.rowOne {
+    float: left;
+    width: calc((100% - 30px));
+    margin: 15px;
+    background-color: blue;
+}
+/* 15*4=60  */
+.rowTwo {
+    float: left;
+    width: calc((100% - 60px) / 3);
+    margin-left: 15px;
+    background-color: rgb(27, 27, 168);
+}
+
+.rowThree{
+    float: left;
+    width: calc((100% - 45px) / 2);
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(27, 168, 51);
+}
+.rowFour{
+    float: left;
+    width: calc((100% - 75px) / 4);
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(27, 168, 51);
+}
+
+/* Second */
+
+.second div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+    font-family: 'Arial';   
+  }
+  .normal{
+    background-color: #B3B3B3; 
+  }
+  .one{
+      background-color: #b3b3b375; 
+    }
+    .two{
+        background-color: #B3B3B3; 
+        opacity: 0.2;
+    }

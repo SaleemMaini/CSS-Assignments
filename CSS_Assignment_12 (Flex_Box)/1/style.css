@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    font-weight: bold;
+    box-shadow: 5px 0px 0px orangered,
+                -5px 0px 0px blue;
+}

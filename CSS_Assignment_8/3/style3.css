@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+.main-ul{
+    width: 400px;
+    margin: auto;
+}
+.main-ul .main-ul-li {
+    list-style: none;
+    background-color: #eee;
+    padding: 15px;
+    margin: 10px;
+}
+
+.html-list li
+,.css-list li
+,.js-list li {
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+.css-list li{
+    list-style-type: upper-roman;
+}
+.js-list{
+    list-style-position: inside;
+    padding-left: 0px;
+
+}

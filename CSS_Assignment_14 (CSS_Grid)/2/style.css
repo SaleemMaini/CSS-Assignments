@@ -1,0 +1,70 @@
+/* 
+    Flexibale Box
+    For Parent
+        - display: flex => To start flexibale box
+        - flex-direction: row => Default value
+        - flex-wrap: nowrap => Default  value 
+        - flex-flow: [Flex-Direction] + [Flex-weap]
+        - justify-content: Flex start => Defaule value
+        - align-items: Streach => Default value
+            * Streach to fit content
+        - align-content: Streach => Default value
+*/
+
+
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.layout{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10% 80% 10%;
+
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+    padding: 20px;
+}
+header::after{
+    content: 'Header';
+    color: white;
+    font-weight: bold;
+}
+section{
+    background-color: orangered;   
+    padding: 20px;
+}
+section::after{
+    content: 'Section';
+    color: white;
+    font-weight: bold;
+}
+aside{
+    background-color: grey;
+    padding: 20px;
+}
+aside::after{
+    content: 'Aside';
+    color: white;
+    font-weight: bold;
+}
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blue;
+    padding: 20px;
+}
+footer::after{
+    content: 'Footer';
+    color: white;
+    font-weight: bold;
+}

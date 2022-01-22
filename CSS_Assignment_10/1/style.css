@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+div{
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 20px 20px;
+    background-color: #eee;
+    border: 2px solid black;
+    border-radius: 100%;
+    counter-increment: cy-counter;
+    -webkit-box-shadow: 5px 5px 0px lightseagreen,
+    -5px -5px 0px magenta;
+    -moz-box-shadow: 5px 5px 0px lightseagreen,
+    -5px -5px 0px magenta;
+    -o-box-shadow: 5px 5px 0px lightseagreen,
+    -5px -5px 0px magenta;
+    -ms-box-shadow: 5px 5px 0px lightseagreen,
+    -5px -5px 0px magenta;
+    box-shadow: 5px 5px 0px lightseagreen,
+                -5px -5px 0px magenta; /* x y blur color */
+}
+div::before{
+    position: absolute;
+    content: counter(cy-counter);
+    color: white;
+    background-color: black;
+    top: -11px;
+    left: 50%;
+    margin-left: -12px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 100%;
+}
+div::after{
+    position: relative;
+    content: 'Element';
+    top: 40px;
+    left: 22px;
+}

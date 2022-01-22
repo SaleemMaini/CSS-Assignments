@@ -1,0 +1,41 @@
+/* 
+    Flexibale Box
+    For Parent
+        - display: flex => To start flexibale box
+        - flex-direction: row => Default value
+        - flex-wrap: nowrap => Default  value 
+        - flex-flow: [Flex-Direction] + [Flex-weap]
+        - justify-content: Flex start => Defaule value
+        - align-items: Streach => Default value
+            * Streach to fit content
+        - align-content: Streach => Default value
+*/
+
+
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.parent {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eee;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+div{
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: calc(94%/3);
+    padding: 10px;
+}

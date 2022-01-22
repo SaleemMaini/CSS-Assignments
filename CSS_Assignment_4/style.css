@@ -1,0 +1,28 @@
+
+    /* Selectors */
+.parent .child .title{
+     color: red;
+ }
+
+
+ .parent .title{
+     color: blue;
+ }
+
+
+ /* Group */ 
+ p,
+.title{
+    color: green;
+}
+
+/* Second */
+
+.box{
+    color: black;
+    max-width: 400px;
+    max-height: 50px;
+    margin:20px;
+    overflow: hidden;
+    background-color: #a52a2a;
+}

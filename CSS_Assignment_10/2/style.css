@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    border-radius: 15px 45px 15px 45px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.356) inset;
+}

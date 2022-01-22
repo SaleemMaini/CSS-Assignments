@@ -1,0 +1,17 @@
+body{
+    font-family: 'Arial';
+}
+div{
+ margin: auto;
+ width: 300px;
+ padding: 20px;
+ background-color: #eee;
+ font-weight: 600;
+}
+div::first-letter{
+    color: white;
+    background-color: red;
+    padding: 12px 10px;
+    margin-left: -35px;
+    margin-right: 7px;
+}

@@ -1,0 +1,47 @@
+
+  
+div,.parg{
+    padding: 20px;
+    border: 3px solid red;
+}
+div{
+    width: 400px;
+    height: 100px;
+}
+.parg{
+    background-color: #eee;
+}
+
+/* Second */
+
+.one{
+    font-family: 'Arial';
+    font-weight: 300;
+    font-size: 45pt;
+    font-style: italic;
+}
+.two{
+
+        font-family: 'Cairo', sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+    font-size: 45pt;
+}
+.three{
+    font-family: 'Jomhuria', cursive;
+    font-size: 45pt;
+    font-weight: 300;
+}
+
+/*  Three */
+html {
+    font-size:20px;
+  }
+.one1{
+    font-size: 2.5rem;
+}
+.two2{
+    font-size: 2rem;
+}
+.three3{
+    font-size: 1.5rem;
+}

@@ -1,0 +1,20 @@
+        /* Primary Styles For The Violet Dev */
+.violetDev {
+    width: 500px;
+    margin: 10PX auto;
+    padding: 20px;
+    color: white;
+}
+    /* Primary Blue Violet Color */
+.blueVioletColor {
+    background-color: blueviolet;
+}
+        /* Primary Blue Violet Color With Alpha 0.5 */
+.blueVioletColor2 {
+    background-color: rgba(137, 43, 226, 0.5);
+}
+        /* Primary Blue Violet Color With Alpha 0.1 */
+.blueVioletColor3 {
+    background-color: rgba(137, 43, 226, 0.1);
+}
+

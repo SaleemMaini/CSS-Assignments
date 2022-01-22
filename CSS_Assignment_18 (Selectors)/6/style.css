@@ -1,0 +1,59 @@
+/* 
+    CSS Selectors
+    ====================
+    ====== Part 1 ======
+    ====================
+    - *
+    - Element [p, div, h2]
+    - Element Other element => div p
+    - Class-name
+    - #id-name
+    - .parent .child
+    - class-one.class-two
+    - .class-name div
+    - .class-name div, .class-name p (Grouping)
+    - Element.class-name (Elemnt have the class name)
+    - .parent > .child (Only direct childs)
+    - Element + other element => [div + p] (next selector)
+    - Element ~ Other Elements => [p ~ div] (Siblians Selector)
+    ====================
+    ====== Part 2 ======
+    ====================
+    - Element [Attribute] => div[title]
+    - [Attribute=Value]
+    - Element[Attribute=value] => div[title="S01"]
+    - [Attribute~=Value] (Contain a word)
+    - [Attribute*=Value] (Contain a string)
+    - [Attribute^=Value] (Start with a string)
+    ====================
+    ====== Part 3 ======
+    ====================
+    - :first-child  => Selector:first-child 
+    - :last-child => Selector:last-child
+    - :first-of-type => p:first-of-type
+    - :last-of-typ => p:last-of-type
+    - :only-child => p:only-child (The only child of p)
+    - :only-of-type
+    ====================
+    ====== Part 4 ======
+    ====================
+    - not(Selector)
+    - :nth-child(n) => nth-child(2), nth-child(even)
+    - :nth-last-child(n)
+    - :nth-of-type(n)
+    - :nth-last-of-type(n)
+    ====================
+    ====== Part 5 ======
+    ====================
+    - :root
+    - :checked
+    - :empty => div:empty
+    - :disabled => input:disabled
+    - :required => input:required
+    - :focus => input:focus
+    - ::selection => div::selection
+    - ::placeholder
+*/
+div:not(.no-need) div:nth-last-of-type(2){
+    color: red;
+}

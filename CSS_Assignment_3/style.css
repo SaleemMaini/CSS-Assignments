@@ -1,0 +1,33 @@
+    /* no repeat img */
+.PrimaryDiv {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    border:1px solid black;
+    background-image: url("200px-Orville_Simpson.png");
+}
+    /* no repeat */
+
+    .norepeat{
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: bottom right;
+    }
+
+
+    /* repeat img vertically */
+.RepatImgVer {
+    background-position: right;
+    background-repeat: repeat-y;
+}
+    /* repeat img horzintally */
+    .RepatImgHor {
+    background-position: bottom;
+    background-repeat: repeat-x;
+    }
+    
+    /* repeat img*/
+    .RepatImg {
+        background-repeat: repeat;
+    }
+    

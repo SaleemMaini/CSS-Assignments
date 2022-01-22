@@ -1,0 +1,79 @@
+/*
+    1px — 767px: Mobile devices
+    768px — 991px: Small screens, laptops
+    992px — 1199px: Medium Screens
+    1200px and more — large screens, TV
+*/
+
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container div{
+    text-align: center;
+    padding: 20px;
+    width: calc(100% - 20px);
+    font-size: 14px;
+    background-color: #eee;
+    margin-bottom: 10px;
+}
+.container div h3{
+    color: teal;
+    font-size: 20px;
+}
+
+/* Mobile devices */
+/* صممنا بطريقة الموبايل أولاً ثم بقية الشاشات */
+/* @media (max-width:767px) {
+
+} */
+
+/* Small Screens */
+@media (min-width:768px) and (max-width:991px) {
+    .container div {
+        width: calc(33.3% - 20px);
+
+    }
+    .container div:first-child{
+        width: calc(100% - 20px);
+    }
+    .container div h3{
+    color: red;
+    }
+    }
+
+/* Medium and large Screens */
+@media (min-width:992px)  {
+    .container div {
+        /* وضع اربع عناصر في الشاشة */
+        width: calc(50% - 20px);
+    }
+    .container div:first-child,
+    .container div:last-child{
+        width: calc(100% - 20px);
+        ;    }
+    
+    .container div h3{
+        color: black;
+        }
+}
+
+/* Large Screens */
+@media (min-width:1200px){
+
+}
+
+/* Custom media */
+@media (max-width:1199px){
+
+}

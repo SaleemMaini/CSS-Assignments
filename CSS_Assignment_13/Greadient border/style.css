@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #eee;
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-image-source: linear-gradient(to right,
+    red 20%,
+    blue 20%,
+    blue 40%,
+    green 40%,
+    green 60%,
+    pink 60%,
+    pink 80%,
+    purple 80%,
+    purple 100%);
+}
+
+div::first-letter{
+    color: orange;
+}

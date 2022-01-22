@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    font-family: 'Arial';
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: 20px 100px;
+    position: relative;
+}
+div::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 4px solid white;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+}
+div::after{
+    position: absolute;
+    content: 'Elzero';
+    width: 150%;
+    height: 150%;
+    background-color: teal;
+    bottom: 0;
+    left: 0;
+    transform: translate(-20%, 60%);
+    display: flex;
+    align-items: flex-end;
+    z-index: -1;
+}
